@@ -1,0 +1,153 @@
+@font-face {
+    font-family: SouthernAire;
+    src: url("SouthernAire.ttf")
+}
+@font-face {
+    font-family: DancingScript;
+    src: url("DancingScript-Regular.ttf")
+}
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+
+
+.mama1{
+	display: block;	
+	min-height: 100vh;/*
+	max-height: 100vh;*/
+	color: #FF3D36;	
+	font-family: sans-serif;
+	text-align: center;
+	background: url("mama.jpg");
+
+}
+#header1{
+	font-size: 40px;
+	padding-top: 6%;
+	font-weight: bold;
+}
+#main1{
+	font-family: SouthernAire;
+	font-size: 150px;
+	padding: 3%;
+}
+
+.button1{
+	font-size: 30px;
+	font-family: sans-serif;
+	background:none;
+	border-radius: 100px;
+	border: 5px solid #FF3D36;
+}
+
+.button1:hover{
+	background: #FF7870;
+}
+
+.button2{
+	font-size: 30px;
+	font-family: sans-serif;
+	background:none;
+	border-radius: 100px;
+	border: 5px solid white;
+}
+
+.button2:hover{
+	background: white;
+}
+
+
+.button3{
+	font-size: 30px;
+	font-family: sans-serif;
+	background:none;
+	border-radius: 100px;
+	border: 5px solid #FF3D36;
+}
+
+.button3:hover{
+	background: #FF7870;
+}
+
+.button4{
+	font-size: 30px;
+	font-family: sans-serif;
+	background:none;
+	border-radius: 100px;
+	border: 5px solid #FF3D36; 
+}
+
+.centerbutton{
+	text-align: center;
+}
+
+.button4:hover{
+	background: #FF7870;
+}
+
+.mama2{
+	display: block;
+	min-height: 100vh;
+	max-height: 100vh;
+	background: #FF3D36;
+	color: white;
+	font-size: 25px;
+	font-family: DancingScript;
+	font-weight: bold;
+}
+
+.mama3{
+	display: block;
+	min-height: 100vh;
+	max-height: 100vh;
+	color: #FF3D36;
+	background: #DEE2FF;
+	font-size: 25px;
+	font-family: DancingScript;
+	font-weight: bold;
+}
+.mama4{
+	display: block;
+	min-height: 100vh;
+	max-height: 100vh;
+	text-align: center;
+}
+
+.finalfont{
+	padding: 2%;
+	font-size: 35px;
+	font-family: serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+ul{
+	padding: 3%;
+	padding-bottom: 5%;
+}
+
+img {
+  max-width: 1000px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  /*padding: %;*/
+}
+
+.second{
+	max-width: 1000px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+.third{
+	max-width: 1000px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+.fourth{ 
+  max-width: 800px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
