@@ -1,0 +1,540 @@
+html,body
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*overflow-x: hidden;*/
+    font-family: Arial,"helvetica neue",Helvetica,Verdana,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.blackOverlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+
+.grayOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+}
+
+.sectionAboutUs .grayOverlay {
+	width: 50%;
+}
+
+.section {
+	overflow: hidden;
+}
+
+.sectionLanding {
+	position: relative;
+	height: 100vh;
+	background: url('images/WickedDogs4.jpg');
+	background-size: cover;
+	background-position: bottom center;
+}
+
+.mainContainerWidth {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.navbarImage {
+	border-radius: 50%;
+}
+
+.sectionAboutUs {
+	padding: 100px 0;
+    position: relative;
+    background: url(images/WickedDogs5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.textContainer {
+	padding: 0 20%;
+}
+
+.navbarImage {
+    max-width: 80% !important;
+}
+
+.NavbarWeb .row {
+	padding: 0 !important;
+}
+
+.NavbarWeb .grid {
+	width: 1140px !important;
+    margin: 0 auto !important;
+}
+
+.navbarImage:hover {
+	max-width: 85% !important;
+	cursor: pointer;
+}
+
+.navbarText {
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+
+.navbarText:hover {
+	font-size: 20px;
+	border-bottom: 3px solid #fec630;
+	cursor: pointer;
+}
+
+.changeNavSize {
+	font-size: 20px;
+	border-bottom: 3px solid #fec630;
+	cursor: pointer;
+}
+
+
+img.changeNavSize {
+	max-width: 85% !important;
+	cursor: pointer;
+}
+
+
+.NavbarWeb .row > .column  {
+	text-align: center;
+	margin-top: 25px !important;
+}
+
+@media only screen and (max-device-width: 480px) {
+	.NavbarWeb {
+		display: none;
+	}
+
+	.NavbarMobile {
+		display: block !important;
+	}
+
+	.sectionHeader {
+		display: block !important;
+	}
+
+	.sectionLanding {
+	    background-position: bottom right;
+	}
+    .grayOverlay {
+        width: 100% !important;
+    }
+    .textContainer {
+		padding: 0 5%;
+	}
+	.sectionAboutUs {
+    	background-position: 100%;
+	}
+	.sectionGallery {
+		height: 500px;
+	}
+	.sectionGalleryContentMobile img {
+	    height: 250px;
+	    width: 100%;
+	    border-radius: 5px;
+	    object-fit: cover;
+	}
+
+	.sectionGalleryContent {
+		display: none;
+	}
+	.sectionGalleryContentMobile {
+		display: block !important;
+	}
+	.sectionContactUs .textContainer {
+		padding: 0 5% !important;
+	}
+
+	.imageContainer {
+	    padding-right: 0 !important;
+	    position: relative;
+	    cursor: pointer;
+	    float: initial !important;
+	    width: 100%;
+	    padding: 0 5% !important;
+	}
+
+	.imageContainer img{
+		border: 1px solid #dadada;
+		border-radius: 5px;
+		height: 220px !important;
+		width: inherit !important;
+		display: block;
+	}
+	.sectionGallery .blackOverlay {
+		display: block !important;
+		background: rgba(0,0,0,0.8);
+	}
+
+	.galleryImage img {
+		height: 250px !important;
+	}
+
+	.sectionGalleryFooter {
+	    position: absolute;
+	    top: 30%;
+		background: rgba(0,0,0,0.8) !important;
+	    width: 100%;
+	    padding: 15px 0;
+	    z-index: 99999;
+	    bottom: initial !important;
+	}
+
+	.menuImage img {
+		height: initial !important;
+		padding: 0 !important;
+	}
+}
+
+.textContainer h1, .textContainer p {
+	text-align: center;
+}
+
+.aboutUsHeader {
+	font-size: 30px;
+	color: #fec630;
+}
+
+.aboutUsContent {
+	color: #ebebeb;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400px;
+}
+
+.sectionContactUs {
+   	padding-top: 130px;
+    padding-bottom: 55px;
+    position: relative;
+    background: url(images/WickedDogs19.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sectionHeader {
+	display: none;
+	position: absolute;
+    left: 0;
+    top: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fec630;
+    background: rgba(33,33,33,0.7);
+    padding: 10px 40px;
+    z-index: 99999;
+}
+
+.contactUsDetails {
+	color: #ebebeb;
+	display: block;
+	margin: 15px 0;
+}
+
+.contactUsHeader {
+	color: #fec630;
+	margin: 5px 0;
+}
+
+.sectionContactUs .row {
+	padding: 50px 0 !important;
+}
+
+.contactUsEmail {
+	margin: 25px 0;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.imageContainer {
+    padding-right: 30%;
+    position: relative;
+    cursor: pointer;
+    float: right;
+}
+
+.imageContainer img{
+	border: 1px solid #dadada;
+	border-radius: 5px;
+	height: 300px;
+	width: auto;
+}
+
+.imageContainerOverlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+}
+
+.sectionContactUs .textContainer {
+    padding-left: 30%;
+    padding-right: 10%;
+}
+
+.textContainerDivider {
+    margin-bottom: 50px;
+}
+
+.sectionFollowUs {
+    padding-top: 150px;
+    padding-bottom: 240px;
+    position: relative;
+    background: url(images/WickedDogs23.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.sectionFollowUsFooter {
+    background: rgba(11,11,11,0.99);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+	left: 0;
+}
+
+.sectionFooterText {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	margin: 5px 0;
+	color: #fec630;
+	font-weight: 400;
+}
+
+.sectionGallery {
+	position: relative;
+    background: url(images/WickedDogs1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.sectionGalleryFooter {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+	width: 100%;
+	padding: 15px 0;
+	z-index: 99999;
+}
+
+.galleryImage img {
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 3px 15px;
+}
+
+.sectionGalleryContentMobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0 5%;
+    margin: -50% 0 0 -50%;
+}
+
+.sectionGalleryContent {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.sectionGalleryContent img {
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.sectionMenu {
+	position: relative;
+}
+
+.menuImage {
+    padding: 50px;
+}
+
+.menuImage img {
+	height: 745px;
+    padding: 0 50px;
+}
+
+#menuCarousel {
+	background: rgba(0,0,0,0.9);
+}
+
+.sectionAccolades {
+	position: relative;
+}
+
+.columnImage {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.columnImage img {
+	height: 200px;
+	width: auto;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 1px solid #9a9a9a;
+	cursor: pointer;
+}
+
+.sectionAccolades {
+    position: relative;
+    background: url(images/WickedDogs26.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.columnAuthor {
+	text-align: center;
+}
+
+.columnAuthor img {
+	height: 100px;
+	width: auto;
+}
+
+.columnHeader {
+	font-size: 18px;
+	color: #ebebeb;
+	font-weight: bold;
+	text-align: center;
+	min-height: 100px;
+}
+
+.sectionAccolades .row {
+	margin-top: 50px;
+}
+
+.sectionAccolades .mainContainerWidth {
+	padding: 50px 0;
+    padding-bottom: 10px;
+}
+
+.columnHeader:hover {
+	color: #f9f9f9;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.sectionFollowUs i {
+	font-size: 100px;
+	margin: 0 auto;
+	display: block;
+	color: #fec630;
+}
+
+.sectionFollowUs span {
+	display: block;
+	text-align: center;
+	color: #ebebeb;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.sectionFollowUsWidth {
+	width: 900px;
+	margin: 0 auto;
+	z-index: 99;
+}
+
+.sectionFollowUsWidth > .column {
+    width: 33.33333333%;
+    margin-top: 0;
+    margin-bottom: 0;
+	position: relative;
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: top;
+    float: left;
+}
+
+.landingOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.landingImage img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.NavbarWeb {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	border-bottom: 1px solid #dadada;
+	-webkit-transform: translateZ(0);
+	z-index: 999999999;
+}
+
+
+.NavbarMobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	border-bottom: 1px solid #dadada;
+	-webkit-transform: translateZ(0);
+	z-index: 999999999;
+}
+
+.followUsWidth {
+	position: relative;
+	overflow: hidden;
+}
+
+.followUsWidth > .grid{
+	width: 800px;
+	padding: 25px 0;
+    margin: 0 auto;
+}
+
+
+.owl-item {
+	z-index: 1 !important;
+}
+
+.mobileLogoHandlerImage {
+	width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.mobileLogoHandler {
+	text-align: center;
+	width: 100%;
+}
