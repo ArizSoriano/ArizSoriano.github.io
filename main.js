@@ -26,22 +26,15 @@ $(document).ready(function(){
 	        }
 	    }
 	})
-  	$('#landingCarousel').owlCarousel({
-	    loop:true,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	    },
-		animateIn: 'fadeIn',
-		animateOut: 'fadeOut',
-		autoplayTimeout: 2000,
-	    autoplay: true,
-      	mouseDrag: false,
-      	singleItem: true,
-
-	})
-
+  	$('#landingCarousel').slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  fade: true,
+	  cssEase: 'linear',
+	  autoplay: true,
+	  autoplaySpeed: 4000,
+	});
 });
 
 $(document).on('click','.galleryImage',function() {

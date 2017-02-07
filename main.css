@@ -36,7 +36,7 @@ html,body
 .sectionLanding {
 	position: relative;
 	height: 100vh;
-	background: url('images/WickedDogs4.jpg');
+	/*background: url('images/WickedDogs4.jpg');*/
 	background-size: cover;
 	background-position: bottom center;
 }
@@ -481,10 +481,37 @@ img.changeNavSize {
     z-index: 10;
 }
 
-.landingImage img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.landingImage {
+	position: absolute !important;
+	top: 0;
+	left: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+	z-index: 1 !important;
+	display: block !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.landingImage1 {
+	background: url('images/WickedDogs4.jpg');
+}
+
+.landingImage2 {
+	background: url('images/WickedDogs14.jpg');
+}
+
+.landingImage3 {
+	background: url('images/WickedDogs17.jpg');
+}
+
+.landingImage4 {
+	background: url('images/WickedDogs19.jpg');
+}
+
+.landingImage5 {
+	background: url('images/WickedDogs24.jpg');
 }
 
 .NavbarWeb {
