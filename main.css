@@ -460,7 +460,6 @@ img.changeNavSize {
 
 .columnHeader:hover {
 	color: #f9f9f9;
-	text-decoration: underline;
 	cursor: pointer;
 }
 
