@@ -16,7 +16,6 @@ $(document).ready(function(){
 	})
   	$('#menuCarousel').owlCarousel({
 	    loop:true,
-	    margin:10,
 	    responsive:{
 	        0:{
 	            items:1
