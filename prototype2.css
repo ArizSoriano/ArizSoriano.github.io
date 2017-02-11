@@ -199,7 +199,7 @@ img.changeNavSize {
 		height: 500px;
 	}
 	.sectionGalleryContentMobile img {
-	    height: 250px;
+	    height: 230px;
 	    width: 100%;
 	    border-radius: 5px;
 	    object-fit: cover;
@@ -462,6 +462,7 @@ img.changeNavSize {
 }
 
 .sectionAccolades {
+	padding: 20px 0;
     position: relative;
     background: #fff;	
     /*background: url(images/WickedDogs26.jpg);*/
