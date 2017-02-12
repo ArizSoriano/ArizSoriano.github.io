@@ -69,15 +69,19 @@ html,body
 	border-radius: 50%;
 }
 
+.ui.grid {
+	display: block !important;
+}
 
 .sectionAboutUs {
-	padding: 100px 0;
+	padding: 130px 0;
     position: relative;
     background: url(images/WickedDogs5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .textContainer {
@@ -173,7 +177,7 @@ img.changeNavSize {
 	}
 
 	.contactUsDetails {
-	    color: #ebebeb;
+	    color: #333;
 	    display: block;
 	    margin: 15px 0;
 	    font-size: 19px !important;
@@ -264,8 +268,9 @@ img.changeNavSize {
 }
 
 .sectionContactUs {
-   	padding-top: 100px;
-    padding-bottom: 100px;
+    border-top: 5px solid #fec630;
+   	padding-top: 80px;
+    padding-bottom: 50px;
     position: relative;
     background: url(images/WickedDogs19.jpg);
     background-repeat: no-repeat;
@@ -287,7 +292,7 @@ img.changeNavSize {
 }
 
 .contactUsDetails {
-	color: #ebebeb;
+	color: #333;
 	display: block;
 	margin: 15px 0;
 	font-weight: bold;
@@ -318,7 +323,7 @@ img.changeNavSize {
 }
 
 .imageContainer img{
-	border: 1px solid #dadada;
+	border: 3px solid #333;
 	border-radius: 5px;
 	height: 300px;
 	width: auto;
@@ -331,13 +336,23 @@ img.changeNavSize {
 
 }
 
+.whiteOverlayContactUs {
+	background: rgba(255,255,255,0.95);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .sectionContactUs .textContainer {
     padding-left: 30%;
     padding-right: 10%;
 }
 
 .textContainerDivider {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fec630;
 }
 
 .sectionFollowUs {
