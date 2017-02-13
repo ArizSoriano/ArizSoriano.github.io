@@ -95,7 +95,7 @@ button {
 .sectionAboutUs {
 	padding: 130px 0;
     position: relative;
-    background: url(images/WickedDogs5.jpg);
+    background: url('images/WickedDogs5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -177,7 +177,7 @@ img.changeNavSize {
 }
 
 @media only screen and (max-device-width: 480px) {
-	
+
 	.gallerymobile {
 		display: block !important;
 	}
@@ -186,7 +186,19 @@ img.changeNavSize {
 		display: none !important;
 	}
 
-	
+	.sectionMenu {
+		background: url('mobileimages/WickedDogs1.jpg') !important;
+	}
+
+	.sectionAboutUs {
+	    background: url('mobileimages/WickedDogs5.jpg') !important;	
+	}
+
+	.sectionContactUs {
+	    background: url(mobileimages/WickedDogs19.jpg) !important;
+	}
+
+
 	.landingImage1 {
 		background: url('images/WickedDogs8.jpg') !important;
 	}
