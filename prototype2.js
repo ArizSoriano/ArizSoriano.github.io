@@ -10,6 +10,17 @@ $(document).ready(function(){
 	        }
 	    }
 	})
+ 	$('#galleryCarousel2').owlCarousel({
+	    loop:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        1000:{
+	            items:3
+	        }
+	    }
+	})
   	$('#menuCarousel').owlCarousel({
 	    loop:true,
 	    responsive:{
@@ -30,6 +41,10 @@ $(document).ready(function(){
 	  autoplay: true,
 	  autoplaySpeed: 4000,
 	});
+
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+	    // some code..
+	}
 });
 
 $(document).on('click','.galleryImage',function() {
@@ -168,3 +183,4 @@ $(document).on('click', '#modalClose', function() {
 	  .modal('hide')
 	;
 });
+

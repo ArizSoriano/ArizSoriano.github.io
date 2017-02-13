@@ -177,7 +177,16 @@ img.changeNavSize {
 }
 
 @media only screen and (max-device-width: 480px) {
+	
+	.gallerymobile {
+		display: block !important;
+	}
 
+	.galleryweb {
+		display: none !important;
+	}
+
+	
 	.landingImage1 {
 		background: url('images/WickedDogs8.jpg') !important;
 	}
