@@ -113,3 +113,58 @@ $(document).on('click', '#sectionFollowUs', function() {
 $(document).on('click', '#sectionHome', function() {
 	$('#sectionLanding').click();
 });
+
+
+$(document).on('click', '#mobileModal', function() {
+	$('.ui.modal')
+	  .modal('show')
+	;
+});
+
+$(document).on('click', '#mobileHome', function() {
+	$('#sectionLanding').click();
+	$('.ui.modal')
+	  .modal('hide')
+	;
+});
+
+$(document).on('click', '#mobileAbout', function() {
+	$('#sectionAboutUs').click();
+	$('.ui.modal')
+	  .modal('hide')
+	;
+});
+
+$(document).on('click', '#mobileMenu', function() {
+	$('#sectionMenu').click();
+	$('.ui.modal')
+	  .modal('hide')
+	;
+});
+
+$(document).on('click', '#mobileGallery', function() {
+	$('#sectionGallery').click();
+	$('.ui.modal')
+	  .modal('hide')
+	;
+});
+
+$(document).on('click', '#mobileAccolades', function() {
+	$('#sectionAccolades').click();
+	$('.ui.modal')
+	  .modal('hide')
+	;
+});
+
+$(document).on('click', '#mobileContact', function() {
+	$('#sectionContactUs').click();
+	$('.ui.modal')
+	  .modal('hide')
+	;
+});
+
+$(document).on('click', '#modalClose', function() {
+	$('.ui.modal')
+	  .modal('hide')
+	;
+});

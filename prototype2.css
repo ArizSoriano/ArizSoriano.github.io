@@ -3,8 +3,18 @@
     src: url("DF-Thin.ttf")
 }
 
+@font-face {
+    font-family: Gel;
+    src: url("gelpenupright.lightcondensed.ttf")
+}
+
+
+@font-face {
+    font-family: Pompiere;
+    src: url("pompiere.regular.ttf")
+}
 h1, h2 {
-	font-family: DFThin;
+	font-family: Gel;
 }
 
 html,body
@@ -13,8 +23,17 @@ html,body
     margin: 0;
     padding: 0;
     /*overflow-x: hidden;*/
-    font-family: DFThin;
+    font-family: Gel;
     -webkit-font-smoothing: antialiased;
+}
+
+button {
+	background: transparent;
+	border: none;
+}
+
+button {
+	outline: 0;
 }
 
 .blackOverlay {
@@ -109,20 +128,20 @@ html,body
 }
 
 .navbarText {
-	font-family: DFThin;
+	font-family: Pompiere;
 	font-weight: bold;
-    font-size: 21px;
+    font-size: 19px;
 	padding-bottom: 3px;
 }
 
 .navbarText:hover {
-	font-size: 23px;
+	font-size: 21px;
 	border-bottom: 3px solid #fec630;
 	cursor: pointer;
 }
 
 .changeNavSize {
-	font-size: 23px;
+	font-size: 21px;
 	border-bottom: 3px solid #fec630;
 	cursor: pointer;
 }
@@ -140,9 +159,62 @@ img.changeNavSize {
 	margin-top: 25px !important;
 }
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	.imageContainer img {
+	    height: 250px !important;
+	}
+
+	.imageContainer {
+		padding-right: 15% !important;
+	}
+
+	.columnHeader {
+		font-size: 20px !important;
+	}
+	.columnImage img {
+	    height: 150px !important;
+	}
+}
+
 @media only screen and (max-device-width: 480px) {
+
+	.landingImage1 {
+		background: url('images/WickedDogs8.jpg') !important;
+	}
+
+	.landingImage2 {
+		background: url('images/WickedDogs25.jpg') !important;
+	}
+
+	.landingImage3 {
+		background: url('images/WickedDogs11.jpg') !important;
+	}
+
+	.landingImage4 {
+		background: url('images/WickedDogs16.jpg') !important;
+	}
+
+	.landingImage5 {
+		background: url('images/WickedDogs20.jpg') !important;
+	}
+
 	.NavbarWeb {
 		display: none;
+	}
+
+
+	.sectionContactUs i {
+		display: none !important;
+	}
+
+	.mobileLogoHandlerImage {
+		width: 50% !important;
+	}
+
+
+	.sectionAboutUs {
+		height: initial !important;
+		padding: 100px 0 !important;
 	}
 
 	.whiteOverlay {
@@ -163,7 +235,7 @@ img.changeNavSize {
 */
 	.contactUsHeader {
 	    color: #fec630;
-	    font-size: 34px !important;
+	    font-size: 28px !important;
 	    margin: 5px 0 !important;
 	}
 
@@ -173,6 +245,7 @@ img.changeNavSize {
 	}
 
 	.columnHeader {
+		font-size: 21px !important;
 		height: initial !important;
 	}
 
@@ -180,12 +253,17 @@ img.changeNavSize {
 	    color: #333;
 	    display: block;
 	    margin: 15px 0;
-	    font-size: 19px !important;
+	    font-size: 14px !important;
 	}
 
 	.menuContainer {
 	    padding: 20px 30px !important;
 	}
+
+	.menuContainerHeader {
+        font-size: 32px !important;
+	}
+
 
 	.sectionLanding {
 	    background-position: bottom right;
@@ -254,7 +332,7 @@ img.changeNavSize {
 }
 
 .aboutUsHeader {
-	font-size: 32px;
+	font-size: 30px;
 	color: #fec630;
 }
 
@@ -262,7 +340,6 @@ img.changeNavSize {
     color: #111;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
-    font-weight: bold;
     font-size: 20px;
     margin-bottom: 30px;
 }
@@ -296,12 +373,12 @@ img.changeNavSize {
 	display: block;
 	margin: 15px 0;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 19px;
 }
 
 .contactUsHeader {
 	color: #fec630;
-	font-size: 44px;
+	font-size: 34px;
 	margin: 5px 0;
 }
 
@@ -497,12 +574,11 @@ img.changeNavSize {
 }
 
 .columnHeader {
-	font-size: 18px;
 	color: #000;
 	font-weight: bold;
 	text-align: center;
 	text-align: -webkit-center;
-	font-size: 26px;
+	font-size: 22px;
 	width: inherit;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -622,7 +698,7 @@ img.changeNavSize {
 
 
 .NavbarMobile {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -711,4 +787,52 @@ img.changeNavSize {
 
 .iconsContainerSpan {
 	margin: 10px 0;
+}
+
+.sectionContactUs i {    
+	font-size: 30px;
+    width: 30px;
+}
+
+.mobileMenu {
+	position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
+.mobileMenu i {
+	font-size: 40px;
+    color: #333;
+}
+
+.ui.dimmer {
+	background: rgba(255,255,255,0.90);
+	z-index: 9999999999;
+}
+
+.menuListItem {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #fec630;
+    padding: 20px;
+    text-align: -webkit-center;
+}
+
+.menuList {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.modalClose {
+	position: absolute;
+    right: -15px;
+    top: 0;
+}
+
+.modalClose i {
+	font-size: 24px;
+	color: #333;
 }

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="semantic.min.css">
 	<link rel="stylesheet" href="owl.carousel.min.css">
 	<link rel="stylesheet" href="owl.theme.default.min.css">
+	<link rel="stylesheet" href="ion/ionicons.min.css">
 	<link rel="stylesheet" href="prototype2.css">		
 
 	<script src="jquery-3.1.1.min.js"></script>
@@ -22,7 +23,33 @@
 <body>
 
 	<div class="mainContainer">
+		<div class="ui basic modal">
+		  <div class="menuList">
+		  	<button class="modalClose" id="modalClose"><i class="ion-close-round"></i></button>
+		  	<div class="menuListItem" id="mobileHome">
+		  		HOME
+		  	</div>
+		  	<div class="menuListItem" id="mobileAbout">
+		  		ABOUT
+		  	</div>
+		  	<div class="menuListItem" id="mobileMenu">
+		  		MENU
+		  	</div>
+		  	<div class="menuListItem" id="mobileGallery">
+		  		GALLERY
+		  	</div>
+		  	<div class="menuListItem" id="mobileAccolades">
+		  		ACCOLADES
+		  	</div>
+		  	<div class="menuListItem" id="mobileContact">
+		  		CONTACT
+		  	</div>
+		  </div>
+		</div>
 		<div class="NavbarMobile" style="display: none;">
+			<div class="mobileMenu">
+				<button id="mobileModal"><i class="ion-navicon-round"></i></button>
+			</div>
 			<div class="mobileLogoHandler">
 				<img class="mobileLogoHandlerImage" src="images/logo.jpg">
 			</div>
@@ -34,7 +61,7 @@
 						<span class="navbarText" id="sectionHome">HOME</span>
 					</div>
 					<div class="two wide column">
-						<span class="navbarText" id="sectionAboutUs">ABOUT US</span>
+						<span class="navbarText" id="sectionAboutUs">ABOUT</span>
 					</div>
 					<div class="two wide column">
 						<span class="navbarText" id="sectionMenu">MENU</span>
@@ -49,7 +76,7 @@
 						<span class="navbarText" id="sectionAccolades">ACCOLADES</span>
 					</div>
 					<div class="two wide column">
-						<span class="navbarText" id="sectionContactUs">CONTACT US</span>
+						<span class="navbarText" id="sectionContactUs">CONTACT</span>
 					</div>
 				</div>
 			</div>
