@@ -1,16 +1,4 @@
 $(document).ready(function(){
-
-	// instagram feed
-
-	// var userFeed = new Instafeed({
- //        get: 'user',
- //        userId: '1500774759',
- //        accessToken: '1500774759.1677ed0.675f25c4bd614e41a6cd21d6fc859e1b',
- //        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
- //    });
-
- //    userFeed.run();
-
   $('#galleryCarousel').owlCarousel({
 	    loop:true,
 	    margin:10,
@@ -44,10 +32,8 @@ $(document).ready(function(){
 	  fade: true,
 	  cssEase: 'linear',
 	  autoplay: true,
-	  autoplayTimeout:5000,
-	  autoplaySpeed: 8000,
+	  autoplaySpeed: 4000,
 	});
-
 });
 
 $(document).on('click','.galleryImage',function() {

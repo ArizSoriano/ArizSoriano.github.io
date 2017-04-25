@@ -857,3 +857,34 @@ img.changeNavSize {
 	font-size: 24px;
 	color: #333;
 }
+
+
+.sectionInstagram {
+	border-bottom: 5px solid #fec630;
+	position: relative;
+    /*background: url(images/WickedDogs14.jpg);*/
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*height: 100vh;*/
+}
+
+.instagramImageContainer img{
+	height: inherit;
+	width: inherit;
+}
+
+.instagramImageContainer {
+	width: 300px;
+	height: 300px;
+}
+
+
+.instagramTextContainer {
+	width: 600px;
+}
+.instagramTextContainer .instagramCaption{
+	color: #333;
+	font-size: 24px;
+}
