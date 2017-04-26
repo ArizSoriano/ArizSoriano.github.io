@@ -80,7 +80,7 @@ button {
 }
 
 .mainContainerWidth {
-	max-width: 1140px;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
@@ -95,7 +95,7 @@ button {
 .sectionAboutUs {
 	padding: 130px 0;
     position: relative;
-    background: url('images/WickedDogs5.jpg');
+    background: url('resizedImages/desktopImages/WickedDogs5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -174,9 +174,48 @@ img.changeNavSize {
 	.columnImage img {
 	    height: 150px !important;
 	}
+
+	.mobileLogoHandlerImage {
+		width: 200px !important;
+		height: auto;
+	}
 }
 
+
 @media only screen and (max-device-width: 480px) {
+
+	.reviewIconsContainer {
+	    width: 260px !important;
+	}
+
+	.reviewIconImage {
+	    display: inline-block;
+	    padding: 0 10px !important;
+	}
+
+	.instagramImageContainer {
+	    width: 260px !important;
+	    height: 260px !important;
+	    margin: 0 auto;
+	}
+
+	.accoladeList {
+	    overflow: hidden;
+	    padding: 0 10px !important;
+	}
+
+	.instagramTextContainer {
+	    width: 260px !important;
+	    margin: 0 auto;
+	}
+
+	.instagramTextContainer .instagramCaption {
+	    color: #333;
+	    font-size: 16px !important;
+	    text-align: center;
+	    text-align: -webkit-center;
+	    padding-top: 20px;
+	}
 
 	.gallerymobile {
 		display: block !important;
@@ -200,23 +239,23 @@ img.changeNavSize {
 
 
 	.landingImage1 {
-		background: url('images/WickedDogs8.jpg') !important;
+		background: url('resizedImages/mobileImages/WickedDogs8.jpg') !important;
 	}
 
 	.landingImage2 {
-		background: url('images/WickedDogs25.jpg') !important;
+		background: url('resizedImages/mobileImages/WickedDogs25.jpg') !important;
 	}
 
 	.landingImage3 {
-		background: url('images/WickedDogs11.jpg') !important;
+		background: url('resizedImages/mobileImages/WickedDogs11.jpg') !important;
 	}
 
 	.landingImage4 {
-		background: url('images/WickedDogs16.jpg') !important;
+		background: url('resizedImages/mobileImages/WickedDogs16.jpg') !important;
 	}
 
 	.landingImage5 {
-		background: url('images/WickedDogs20.jpg') !important;
+		background: url('resizedImages/mobileImages/WickedDogs20.jpg') !important;
 	}
 
 	.NavbarWeb {
@@ -229,7 +268,7 @@ img.changeNavSize {
 	}
 
 	.mobileLogoHandlerImage {
-		width: 50% !important;
+		width: 45% !important;
 	}
 
 
@@ -370,7 +409,7 @@ img.changeNavSize {
    	padding-top: 80px;
     padding-bottom: 50px;
     position: relative;
-    background: url(images/WickedDogs19.jpg);
+    background: url(resizedImages/desktopImages/WickedDogs19.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -686,23 +725,23 @@ img.changeNavSize {
 }
 
 .landingImage1 {
-	background: url('images/WickedDogs4.jpg');
+	background: url('resizedImages/desktopImages/WickedDogs4.jpg');
 }
 
 .landingImage2 {
-	background: url('images/WickedDogs14.jpg');
+	background: url('resizedImages/desktopImages/WickedDogs14.jpg');
 }
 
 .landingImage3 {
-	background: url('images/WickedDogs17.jpg');
+	background: url('resizedImages/desktopImages/WickedDogs17.jpg');
 }
 
 .landingImage4 {
-	background: url('images/WickedDogs19.jpg');
+	background: url('resizedImages/desktopImages/WickedDogs19.jpg');
 }
 
 .landingImage5 {
-	background: url('images/WickedDogs1.jpg');
+	background: url('resizedImages/desktopImages/WickedDogs1.jpg');
 }
 
 .NavbarWeb {
@@ -860,7 +899,6 @@ img.changeNavSize {
 
 
 .sectionInstagram {
-	border-bottom: 5px solid #fec630;
 	position: relative;
     /*background: url(images/WickedDogs14.jpg);*/
     background: #fff;
@@ -876,15 +914,72 @@ img.changeNavSize {
 }
 
 .instagramImageContainer {
-	width: 300px;
-	height: 300px;
+	width: 320px;
+    height: 320px;
+    margin: 0 auto;
 }
 
 
 .instagramTextContainer {
-	width: 600px;
+    width: 350px;
+    margin: 0 auto
 }
+
 .instagramTextContainer .instagramCaption{
 	color: #333;
-	font-size: 24px;
+	font-size: 20px;
+	text-align: center;
+	text-align: -webkit-center;
+	padding-top: 20px;
+}
+
+.sectionInstagram .mainContainerWidth {
+	padding: 70px 0;
+}
+
+.accoladeContainerText {
+	color: #333;
+    font-size: 18px;
+}
+
+.accoladeContainer {
+	border-bottom: 1px solid #fec630;
+	padding: 10px 0;
+}
+
+.reviewIconImage img {
+	height: 100px;
+	width: 100px;
+}
+
+.reviewIconsContainer {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.reviewIconImage {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.iconTripadvisor {
+	float: left;
+}
+
+.iconZomato {
+	float: right;
+}
+
+.accoladeList {
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.reviewIconsHeaderText {
+	color: #000;
+    font-size: 24px;
+    text-align: -webkit-center;
 }

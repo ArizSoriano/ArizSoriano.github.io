@@ -12,7 +12,8 @@ $(document).ready(function(){
       		var link = data['data']['0']['link']
         	$('#instagramImage img').attr('src',image)
         	$('.instagramCaption').text('" '+caption+' "')
-        	$('.sectionInstagram > a').attr('href',link)
+        	$('.sectionInstagram a').attr('href',link)
+        	console.log(link)
         }
     });
 	
@@ -121,8 +122,8 @@ $(document).on('click', '#sectionLanding', function() {
 	});
 });
 
-$(document).on('click', '#sectionAccolades', function() {
-	$('body').scrollTo('.sectionAccolades', {
+$(document).on('click', '#sectionInstagram', function() {
+	$('body').scrollTo('.sectionInstagram', {
 		duration: 1000,
 		offset: -40
 	});
@@ -182,7 +183,7 @@ $(document).on('click', '#mobileGallery', function() {
 });
 
 $(document).on('click', '#mobileAccolades', function() {
-	$('#sectionAccolades').click();
+	$('#sectionInstagram').click();
 	$('.ui.modal')
 	  .modal('hide')
 	;
