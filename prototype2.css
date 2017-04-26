@@ -179,10 +179,47 @@ img.changeNavSize {
 		width: 200px !important;
 		height: auto;
 	}
+
+	.sectionAboutUs .column {
+		width: 100% !important;
+	}
+
+	.sectionAboutUs {
+    	background-position: left;
+	} 
+
+	.sectionAboutUs .whiteOverlay {
+		width: 100%;
+	}
+
+	.navbarText {
+		font-size: 16px !important;
+	}
+
+	.changeNavSize {
+		font-size: 18px !important;
+	}
+
+	.NavbarWeb {
+		height: 50px !important;
+	}
+
+	.NavbarWeb .row > .column {
+	    text-align: -webkit-center;
+	    margin-top: 18px !important;
+	}
 }
 
 
 @media only screen and (max-device-width: 480px) {
+
+	.menuContainerComplete {
+	    margin: 25px 0 !important;
+	}
+
+	.menuContainerComplete_Link {
+		font-size: 18px;
+	}
 
 	.reviewIconsContainer {
 	    width: 100% !important;
@@ -983,4 +1020,22 @@ img.changeNavSize {
 	color: #000;
     font-size: 24px;
     text-align: -webkit-center;
+}
+
+.menuContainerComplete:hover {
+	text-decoration: underline;
+	color: #333;
+}
+
+.menuContainerComplete {
+    margin: 50px 0;
+}
+
+.menuContainerComplete a {
+	color: #333;
+}
+
+.menuContainerComplete_Link {
+	font-size: 24px;
+	color: #333;
 }
