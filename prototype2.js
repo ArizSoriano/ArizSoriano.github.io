@@ -5,15 +5,12 @@ $(document).ready(function(){
         type: 'GET',
      	dataType: "jsonp",
         success: function(data) {
-
-        	console.log(data);
         	var caption = data['data']['0']['caption']['text'];
         	var image = data['data']['0']['images']['standard_resolution']['url'];
       		var link = data['data']['0']['link']
         	$('#instagramImage img').attr('src',image)
         	$('.instagramCaption').text('" '+caption+' "')
         	$('.sectionInstagram a').attr('href',link)
-        	console.log(link)
         }
     });
 	
@@ -50,7 +47,7 @@ $(document).ready(function(){
 	        }
 	    }
 	})
-	
+
   	$('#landingCarousel').slick({
 	  infinite: true,
 	  slidesToShow: 1,
