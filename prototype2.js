@@ -50,6 +50,7 @@ $(document).ready(function(){
 	        }
 	    }
 	})
+	
   	$('#landingCarousel').slick({
 	  infinite: true,
 	  slidesToShow: 1,
@@ -58,6 +59,7 @@ $(document).ready(function(){
 	  cssEase: 'linear',
 	  autoplay: true,
 	  autoplaySpeed: 4000,
+	  speed: 1500
 	});
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
